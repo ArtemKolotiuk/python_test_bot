@@ -1901,3 +1901,250 @@ d9ÌZ"ëóaWdûdåE  Ì©Ì¨À+À/À,À0ÀÀ   / 5 ºº 
 2021-12-08 19:33:59,627 INFO _internal _log 225 127.0.0.1 - - [08/Dec/2021 19:33:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2021-12-08 19:34:07,586 INFO _internal _log 225 127.0.0.1 - - [08/Dec/2021 19:34:07] "GET /users HTTP/1.1" 200 -
 2021-12-08 20:14:39,186 INFO _internal _log 225 127.0.0.1 - - [08/Dec/2021 20:14:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-12-14 20:47:14,340 INFO settings <module> 17 Logging started
+2021-12-14 20:47:14,455 INFO _internal _log 225  * Restarting with stat
+2021-12-14 20:47:16,350 INFO settings <module> 17 Logging started
+2021-12-14 20:47:16,401 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 20:47:16,418 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 20:47:16,616 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 20:47:16,617 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)
+2021-12-14 20:47:49,631 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:47:49,633 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:47:49] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:48:47,041 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:48:47,043 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:48:47] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:48:59,042 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:48:59,043 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:48:59] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:50:14,873 INFO _internal _log 225  * Detected change in 'C:\\Users\\artem\\Python\\qa_automation_lessons\\lesson_1\\api\\views.py', reloading
+2021-12-14 20:50:16,167 INFO _internal _log 225  * Restarting with stat
+2021-12-14 20:50:23,020 INFO settings <module> 17 Logging started
+2021-12-14 20:50:23,300 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 20:50:23,383 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 20:50:23,932 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 20:50:23,933 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)
+2021-12-14 20:50:27,383 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:50:27,385 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:50:27] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:51:08,096 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:51:08,099 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:51:08] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:51:10,207 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:51:10] "[35m[1mPOST /users HTTP/1.1[0m" 500 -
+2021-12-14 20:51:12,277 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:51:12] "GET /users HTTP/1.1" 200 -
+2021-12-14 20:53:19,688 INFO _internal _log 225  * Detected change in 'C:\\Users\\artem\\Python\\qa_automation_lessons\\lesson_1\\api\\views.py', reloading
+2021-12-14 20:53:19,810 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 3232.
+2021-12-14 20:53:19,879 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000021162BD5E40>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 3232.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 3232.
+2021-12-14 20:53:20,074 INFO _internal _log 225  * Restarting with stat
+2021-12-14 20:53:28,165 INFO settings <module> 17 Logging started
+2021-12-14 20:54:59,225 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 20:54:59,315 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 20:54:59,796 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 20:54:59,797 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)
+2021-12-14 20:55:37,332 INFO settings <module> 17 Logging started
+2021-12-14 20:55:37,407 INFO _internal _log 225  * Restarting with stat
+2021-12-14 20:55:39,723 INFO settings <module> 17 Logging started
+2021-12-14 20:55:39,780 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 20:55:39,792 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 20:55:40,122 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 20:55:40,123 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)
+2021-12-14 20:55:54,661 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:55:54,662 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:55:54] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:55:56,707 ERROR views create_new_user 35 User with params {'email': 'invalid_test@mail.com', 'password': '1234'} not loaded correctly.
+2021-12-14 20:55:56,708 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:55:56] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2021-12-14 20:55:58,857 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:55:58] "GET /users HTTP/1.1" 200 -
+2021-12-14 20:57:30,660 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:57:30,661 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:57:30] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:57:32,722 ERROR views create_new_user 35 User with params {'email': 'invalid_test@mail.com', 'password': '1234'} not loaded correctly.
+2021-12-14 20:57:32,723 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:57:32] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2021-12-14 20:57:34,780 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:57:34] "GET /users HTTP/1.1" 200 -
+2021-12-14 20:59:28,429 INFO views create_new_user 27 New user new_user created.
+2021-12-14 20:59:28,431 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:59:28] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 20:59:30,491 ERROR views create_new_user 35 User with params {'email': 'invalid_test@mail.com', 'password': '1234'} not loaded correctly.
+2021-12-14 20:59:30,492 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:59:30] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2021-12-14 20:59:32,554 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 248 and this is thread id 3740.
+2021-12-14 20:59:32,558 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000028FD55A6340>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 248 and this is thread id 3740.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 248 and this is thread id 3740.
+2021-12-14 20:59:32,573 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 20:59:32] "GET /users HTTP/1.1" 200 -
+2021-12-14 21:00:17,429 INFO views create_new_user 27 New user new_user created.
+2021-12-14 21:00:17,431 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:00:17] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 21:00:19,477 ERROR views create_new_user 35 User with params {'email': 'invalid_test@mail.com', 'password': '1234'} not loaded correctly.
+2021-12-14 21:00:19,478 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:00:19] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2021-12-14 21:00:21,546 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:00:21] "GET /users HTTP/1.1" 200 -
+2021-12-14 21:11:19,691 INFO views create_new_user 27 New user new_user created.
+2021-12-14 21:11:19,693 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:11:19] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2021-12-14 21:11:21,743 ERROR views create_new_user 35 User with params {'email': 'invalid_test@mail.com', 'password': '1234'} not loaded correctly.
+2021-12-14 21:11:21,743 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:11:21] "[31m[1mPOST /users HTTP/1.1[0m" 400 -
+2021-12-14 21:11:23,812 INFO _internal _log 225 127.0.0.1 - - [14/Dec/2021 21:11:23] "GET /users HTTP/1.1" 200 -
+2021-12-14 21:13:37,561 INFO _internal _log 225  * Detected change in 'C:\\Users\\artem\\Python\\qa_automation_lessons\\lesson_1\\api\\views.py', reloading
+2021-12-14 21:13:37,715 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3556 and this is thread id 7436.
+2021-12-14 21:13:37,721 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000028FD55A6340>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3556 and this is thread id 7436.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3556 and this is thread id 7436.
+2021-12-14 21:13:37,726 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7112 and this is thread id 7436.
+2021-12-14 21:13:37,728 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000028FD55A5C40>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7112 and this is thread id 7436.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7112 and this is thread id 7436.
+2021-12-14 21:13:37,729 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 7436.
+2021-12-14 21:13:37,730 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000028FD55A5E40>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 7436.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 6288 and this is thread id 7436.
+2021-12-14 21:13:37,730 ERROR base _finalize_fairy 765 Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3740 and this is thread id 7436.
+2021-12-14 21:13:37,730 ERROR base _close_connection 249 Exception closing connection <sqlite3.Connection object at 0x0000028FD55A6440>
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 739, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 988, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 669, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3740 and this is thread id 7436.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\pool\base.py", line 247, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\artem\.virtualenvs\api-FAmylUD2\lib\site-packages\sqlalchemy\engine\default.py", line 675, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3740 and this is thread id 7436.
+2021-12-14 21:13:38,582 INFO _internal _log 225  * Restarting with stat
+2021-12-14 21:13:44,325 INFO settings <module> 17 Logging started
+2021-12-14 21:13:44,384 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 21:13:44,416 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 21:13:44,640 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 21:13:44,640 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)
+2021-12-14 21:13:47,627 INFO _internal _log 225  * Detected change in 'C:\\Users\\artem\\Python\\qa_automation_lessons\\lesson_1\\api\\views.py', reloading
+2021-12-14 21:13:48,478 INFO _internal _log 225  * Restarting with stat
+2021-12-14 21:13:53,647 INFO settings <module> 17 Logging started
+2021-12-14 21:13:53,714 WARNING _internal _log 225  * Debugger is active!
+2021-12-14 21:13:53,727 INFO _internal _log 225  * Debugger PIN: 849-185-064
+2021-12-14 21:13:53,881 WARNING _internal _log 225  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-14 21:13:53,882 INFO _internal _log 225  * Running on http://192.168.88.98:5000/ (Press CTRL+C to quit)

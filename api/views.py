@@ -30,6 +30,10 @@ def create_new_user():
             message = f"User with params {content} not loaded with exception: {e}"
             logger.error(message)
             return jsonify({"error_message": message}), 400
+    else:
+        message = f"User with params {content} not loaded correctly."
+        logger.error(message)
+        return jsonify({"error_message": message}), 400
 
 
 @app.route("/users", methods = ["get"])
